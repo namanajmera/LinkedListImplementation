@@ -27,11 +27,13 @@ public class MyLinkedListTest {
         MyNode<Integer> thirdNode = new MyNode<>(56);
 
         MyLinkedList myLinkedList = new MyLinkedList();
+
         myLinkedList.add(firstNode);
         myLinkedList.add(secondNode);
         myLinkedList.add(thirdNode);
 
         myLinkedList.printMyList();
+
         boolean result = myLinkedList.getHead().equals(thirdNode) &&
                 myLinkedList.getHead().getNext().equals(secondNode) &&
                 myLinkedList.getTail().equals(firstNode);
@@ -72,7 +74,7 @@ public class MyLinkedListTest {
         myLinkedList.insert(firstNode, secondNode);
 
         myLinkedList.printMyList();
-        boolean result=myLinkedList.getHead().equals(firstNode) &&
+        boolean result = myLinkedList.getHead().equals(firstNode) &&
                 myLinkedList.getHead().getNext().equals(secondNode) &&
                 myLinkedList.getTail().equals(thirdNode);
 
@@ -137,14 +139,39 @@ public class MyLinkedListTest {
         MyNode<Integer> thirdNode = new MyNode(70);
 
         MyLinkedList myLinkedList = new MyLinkedList();
+
         myLinkedList.append(firstNode);
         myLinkedList.append(secondNode);
         myLinkedList.append(thirdNode);
+
         myLinkedList.insertAfter(30, 40);
+
         boolean result = myLinkedList.getHead().equals(firstNode) && myLinkedList.getHead().getNext().equals(secondNode)
                 && myLinkedList.getHead().getNext().getNext().equals(myLinkedList.search(40))
                 && myLinkedList.getTail().equals(thirdNode);
         myLinkedList.printMyList();
         Assertions.assertTrue(result);
+    }
+
+    @Test
+    public void given3NumberWhenDeletingAnElementShouldPassLinkedListTest() {
+        MyNode<Integer> firstNode = new MyNode(56);
+        MyNode<Integer> secondNode = new MyNode(30);
+        MyNode<Integer> thirdNode = new MyNode(40);
+        MyNode<Integer> fourthNode = new MyNode(70);
+
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.append(firstNode);
+        myLinkedList.append(secondNode);
+        myLinkedList.append(thirdNode);
+        myLinkedList.append(fourthNode);
+
+        myLinkedList.deleteElement(thirdNode.getKey());
+        System.out.println("Size : " + myLinkedList.size());
+
+        boolean result = myLinkedList.getHead().equals(firstNode) && myLinkedList.getHead().getNext().equals(secondNode)
+                && myLinkedList.getTail().equals(fourthNode);
+        myLinkedList.printMyList();
+        Assertions.assertTrue(true);
     }
 }
