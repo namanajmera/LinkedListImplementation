@@ -1,6 +1,6 @@
 package com.linkedlistimplementation;
 
-public class MyLinkedList<K> {
+public class MyLinkedList {
     private AllNode head;
     private AllNode tail;
     private static AllNode tempNode;
@@ -65,5 +65,12 @@ public class MyLinkedList<K> {
         tempNode = myNode.getNext();
         myNode.setNext(newNode);
         newNode.setNext(tempNode);
+    }
+
+    public AllNode deleteFirst() {
+        AllNode tempNode = this.head;
+        this.head = head.getNext();
+        System.out.println("Deleted element is :" + tempNode.getKey());
+        return tempNode;
     }
 }

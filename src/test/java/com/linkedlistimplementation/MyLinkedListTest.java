@@ -60,7 +60,7 @@ public class MyLinkedListTest {
     }
 
     @Test
-    public void given3NumberWhenInseringInBetweenShouldPassLinkedListTest() {
+    public void given3NumberWhenInsertingInBetweenShouldPassLinkedListTest() {
         MyNode<Integer> firstNode = new MyNode<>(56);
         MyNode<Integer> secondNode = new MyNode<>(30);
         MyNode<Integer> thirdNode = new MyNode<>(70);
@@ -77,5 +77,22 @@ public class MyLinkedListTest {
                 myLinkedList.getTail().equals(thirdNode);
 
         Assertions.assertTrue(result);
+    }
+
+    @Test
+    public void given3NumberWhenDeletedFirstElementShouldReturnFirstElement() {
+        MyNode<Integer> firstNode = new MyNode<>(56);
+        MyNode<Integer> secondNode = new MyNode<>(30);
+        MyNode<Integer> thirdNode = new MyNode<>(70);
+
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.append(firstNode);
+        myLinkedList.append(secondNode);
+        myLinkedList.append(thirdNode);
+
+        AllNode deletedNode = myLinkedList.deleteFirst();
+        System.out.print("After deleting first element, ");
+        myLinkedList.printMyList();
+        Assertions.assertEquals(firstNode, deletedNode);
     }
 }
