@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-06T06:39:34" hostname="HACKERNAMAN" time="0.016">
+<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-05-06T06:45:54" hostname="HACKERNAMAN" time="0.036">
   <properties/>
-  <testcase name="given3NumberWhenSearchForAnElementShouldReturnElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.016"/>
-  <system-out><![CDATA[Element is present
+  <testcase name="given3NumberWhenInsertingInBetweenShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.021"/>
+  <testcase name="given3NumberWhenSearchForAnElementShouldReturnElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.003"/>
+  <testcase name="given3NumberWhenLinkedShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
+  <testcase name="given3NumberWhenDeletedFirstElementShouldReturnFirstElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
+  <testcase name="given3NumberWhenAppendedToLinkedShouldBeAddedToBottom()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
+  <testcase name="given3NumberWhenInsertingAfterAnElementShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
+  <testcase name="given3NumberWhenAddedToLinkedShouldBeAddedToTop()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
+  <testcase name="given3NumberWhenDeletedLastElementShouldReturnLastElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
+  <system-out><![CDATA[My List is : 56->30->70
+Element is present
 Searched key : 30
 My List is : 56->30->70
+Deleted element is :56
+After deleting first element, My List is : 30->70
+My List is : 56->30->70
+Element is present
+Element inserted
+Element is present
+My List is : 56->30->40->70
+My List is : 56->30->70
+Deleted element is :70
+After deleting last element, My List is : 56->30
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

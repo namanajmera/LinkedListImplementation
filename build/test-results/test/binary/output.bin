@@ -1,3 +1,14 @@
-Element is present
-Searched key : 30
 My List is : 56->30->70
+Element is present
+Searched key : 30
+My List is : 56->30->70
+Deleted element is :56
+3After deleting first element, My List is : 30->70
+My List is : 56->30->70
+Element is present
+Element inserted
+Element is present
+My List is : 56->30->40->70
+My List is : 56->30->70
+	Deleted element is :70
+	2After deleting last element, My List is : 56->30

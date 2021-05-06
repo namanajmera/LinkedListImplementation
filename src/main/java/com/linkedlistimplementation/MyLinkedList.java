@@ -93,6 +93,14 @@ public class MyLinkedList<K> {
             System.out.println("Element is not present");
             return null;
         }
+    }
 
+    public void insertAfter(K myKey, K newKey) {
+        AllNode myNode = search(myKey);
+        if (myNode != null) {
+            insert(myNode, new MyNode(newKey));
+            System.out.println("Element inserted");
+        } else
+            System.out.println("Element not inserted");
     }
 }
