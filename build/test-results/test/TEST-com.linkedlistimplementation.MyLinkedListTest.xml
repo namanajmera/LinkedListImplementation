@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-06T06:34:34" hostname="HACKERNAMAN" time="0.014">
+<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-06T06:39:34" hostname="HACKERNAMAN" time="0.016">
   <properties/>
-  <testcase name="given3NumberWhenDeletedLastElementShouldReturnLastElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.014"/>
-  <system-out><![CDATA[Deleted element is :70
-After deleting last element, My List is : 56->30
+  <testcase name="given3NumberWhenSearchForAnElementShouldReturnElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.016"/>
+  <system-out><![CDATA[Element is present
+Searched key : 30
+My List is : 56->30->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

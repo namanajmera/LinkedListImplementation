@@ -1,6 +1,6 @@
 package com.linkedlistimplementation;
 
-public class MyLinkedList {
+public class MyLinkedList<K> {
     private AllNode head;
     private AllNode tail;
 
@@ -75,5 +75,24 @@ public class MyLinkedList {
         tempNode = tempNode.getNext();
         System.out.println("Deleted element is :" + tempNode.getKey());
         return tempNode;
+    }
+
+    public AllNode search(K key) {
+        AllNode tempNode = head;
+        while (!tempNode.equals(tail)) {
+            if (tempNode.getKey() == key) {
+                System.out.println("Element is present");
+                return tempNode;
+            }
+            tempNode = tempNode.getNext();
+        }
+        if (tempNode.getKey() == key) {
+            System.out.println("Element is present");
+            return tempNode;
+        } else {
+            System.out.println("Element is not present");
+            return null;
+        }
+
     }
 }
