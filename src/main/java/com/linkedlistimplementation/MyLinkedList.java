@@ -3,11 +3,6 @@ package com.linkedlistimplementation;
 public class MyLinkedList {
     private AllNode head;
     private AllNode tail;
-    private static AllNode tempNode;
-
-    public static AllNode getTempNode() {
-        return tempNode;
-    }
 
     public AllNode getHead() {
         return head;
@@ -18,10 +13,9 @@ public class MyLinkedList {
     }
 
     public MyLinkedList() {
-        this.head = null;
-        this.tail = null;
+        this.head = head;
+        this.tail = tail;
     }
-
 
     public void add(AllNode newNode) {
         if (tail == null)
@@ -29,7 +23,7 @@ public class MyLinkedList {
         if (head == null)
             this.head = newNode;
         else {
-            tempNode = this.head;
+            AllNode tempNode = this.head;
             this.head = newNode;
             newNode.setNext(tempNode);
         }
@@ -47,22 +41,20 @@ public class MyLinkedList {
     }
 
     public void printMyList() {
-        System.out.println("My List is :");
-        StringBuffer myNodes = new StringBuffer();
-        tempNode = head;
-        while (tempNode.getNext() != null) {
-            myNodes.append(tempNode.getKey());
-            if (!tempNode.equals(tail))
-                myNodes.append("->");
+        System.out.print("My List is : ");
+        StringBuffer myList = new StringBuffer();
+        AllNode tempNode = head;
+        while (!tempNode.equals(tail)) {
+            myList.append(tempNode.getKey());
+            myList.append("->");
             tempNode = tempNode.getNext();
         }
-        myNodes.append(tempNode.getKey());
-        System.out.println(myNodes);
+        myList.append(tempNode.getKey());
+        System.out.println(myList);
     }
 
-
     public void insert(AllNode myNode, AllNode newNode) {
-        tempNode = myNode.getNext();
+        AllNode tempNode = myNode.getNext();
         myNode.setNext(newNode);
         newNode.setNext(tempNode);
     }
@@ -70,6 +62,17 @@ public class MyLinkedList {
     public AllNode deleteFirst() {
         AllNode tempNode = this.head;
         this.head = head.getNext();
+        System.out.println("Deleted element is :" + tempNode.getKey());
+        return tempNode;
+    }
+
+    public AllNode deleteLast() {
+        AllNode tempNode = head;
+        while (!tempNode.getNext().equals(tail)) {
+            tempNode = tempNode.getNext();
+        }
+        this.tail = tempNode;
+        tempNode = tempNode.getNext();
         System.out.println("Deleted element is :" + tempNode.getKey());
         return tempNode;
     }

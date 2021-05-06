@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-06T06:25:41" hostname="HACKERNAMAN" time="0.022">
+<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-06T06:34:34" hostname="HACKERNAMAN" time="0.014">
   <properties/>
-  <testcase name="given3NumberWhenInsertingInBetweenShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.015"/>
-  <testcase name="given3NumberWhenLinkedShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
-  <testcase name="given3NumberWhenDeletedFirstElementShouldReturnFirstElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.002"/>
-  <testcase name="given3NumberWhenAppendedToLinkedShouldBeAddedToBottom()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
-  <testcase name="given3NumberWhenAddedToLinkedShouldBeAddedToTop()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
-  <system-out><![CDATA[My List is :
-56->30->70
-Deleted element is :56
-After deleting first element, My List is :
-30->70
-My List is :
-56->30->70
-My List is :
-56->30->70
+  <testcase name="given3NumberWhenDeletedLastElementShouldReturnLastElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.014"/>
+  <system-out><![CDATA[Deleted element is :70
+After deleting last element, My List is : 56->30
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -95,4 +95,21 @@ public class MyLinkedListTest {
         myLinkedList.printMyList();
         Assertions.assertEquals(firstNode, deletedNode);
     }
+
+    @Test
+    public void given3NumberWhenDeletedLastElementShouldReturnLastElement() {
+        MyNode<Integer> firstNode = new MyNode<>(56);
+        MyNode<Integer> secondNode = new MyNode<>(30);
+        MyNode<Integer> thirdNode = new MyNode<>(70);
+
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.append(firstNode);
+        myLinkedList.append(secondNode);
+        myLinkedList.append(thirdNode);
+
+        AllNode deletedNode = myLinkedList.deleteLast();
+        System.out.print("After deleting last element, ");
+        myLinkedList.printMyList();
+        Assertions.assertEquals(thirdNode, deletedNode);
+    }
 }
