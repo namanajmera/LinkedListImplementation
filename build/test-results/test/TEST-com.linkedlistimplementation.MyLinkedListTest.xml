@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-05-06T06:50:40" hostname="HACKERNAMAN" time="0.032">
+<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-05-06T07:03:03" hostname="HACKERNAMAN" time="0.03">
   <properties/>
-  <testcase name="given3NumberWhenInsertingInBetweenShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.017"/>
-  <testcase name="given3NumberWhenDeletingAnElementShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.005"/>
+  <testcase name="given3NumberWhenInsertingInBetweenShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.015"/>
+  <testcase name="given3NumberWhenDeletingAnElementShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.004"/>
+  <testcase name="given3NumberWhenAddingElementInOrderShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
   <testcase name="given3NumberWhenSearchForAnElementShouldReturnElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.003"/>
   <testcase name="given3NumberWhenLinkedShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
   <testcase name="given3NumberWhenDeletedFirstElementShouldReturnFirstElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
-  <testcase name="given3NumberWhenAppendedToLinkedShouldBeAddedToBottom()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.0"/>
+  <testcase name="given3NumberWhenAppendedToLinkedShouldBeAddedToBottom()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
   <testcase name="given3NumberWhenInsertingAfterAnElementShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
   <testcase name="given3NumberWhenAddedToLinkedShouldBeAddedToTop()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
   <testcase name="given3NumberWhenDeletedLastElementShouldReturnLastElement()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.001"/>
@@ -15,6 +16,9 @@ Element is present
 Element deleted
 Size : 3
 My List is : 56->30->70
+Element is present
+Element is present
+My List is : 30->40->56->70
 Element is present
 Searched key : 30
 My List is : 56->30->70
