@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-06T04:13:46" hostname="HACKERNAMAN" time="0.014">
+<testsuite name="com.linkedlistimplementation.MyLinkedListTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-06T04:40:13" hostname="HACKERNAMAN" time="0.017">
   <properties/>
-  <testcase name="given3NumberWhenLinkedShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.014"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="given3NumberWhenLinkedShouldPassLinkedListTest()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.013"/>
+  <testcase name="given3NumberWhenAddedToLinkedShouldBeAddedToTop()" classname="com.linkedlistimplementation.MyLinkedListTest" time="0.003"/>
+  <system-out><![CDATA[My List is :
+56->30->70
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
