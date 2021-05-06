@@ -35,6 +35,17 @@ public class MyLinkedList<K> {
         }
     }
 
+    public void append(AllNode newNode) {
+        if (head == null)
+            this.head = newNode;
+        if (tail == null)
+            this.tail = newNode;
+        else {
+            this.tail.setNext(newNode);
+            this.tail = newNode;
+        }
+    }
+
     public void printMyList() {
         System.out.println("My List is :");
         StringBuffer myNodes = new StringBuffer();
@@ -48,4 +59,6 @@ public class MyLinkedList<K> {
         myNodes.append(tempNode.getKey());
         System.out.println(myNodes);
     }
+
+
 }

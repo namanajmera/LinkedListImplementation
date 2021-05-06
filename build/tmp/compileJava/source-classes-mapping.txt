@@ -1,6 +1,6 @@
 com/linkedlistimplementation/MyNode.java
  com.linkedlistimplementation.MyNode
-com/linkedlistimplementation/MyLinkedList.java
- com.linkedlistimplementation.MyLinkedList
 com/linkedlistimplementation/AllNode.java
  com.linkedlistimplementation.AllNode
+com/linkedlistimplementation/MyLinkedList.java
+ com.linkedlistimplementation.MyLinkedList

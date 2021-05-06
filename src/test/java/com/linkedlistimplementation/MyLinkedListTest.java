@@ -38,4 +38,24 @@ public class MyLinkedListTest {
 
         Assertions.assertTrue(result);
     }
+
+    @Test
+    public void given3NumberWhenAppendedToLinkedShouldBeAddedToBottom() {
+        MyNode<Integer> firstNode = new MyNode<>(56);
+        MyNode<Integer> secondNode = new MyNode<>(30);
+        MyNode<Integer> thirdNode = new MyNode<>(70);
+
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.append(firstNode);
+        myLinkedList.append(secondNode);
+        myLinkedList.append(thirdNode);
+
+        myLinkedList.printMyList();
+
+        boolean result=myLinkedList.getHead().equals(firstNode) &&
+                myLinkedList.getHead().getNext().equals(secondNode) &&
+                myLinkedList.getTail().equals(thirdNode);
+        Assertions.assertTrue(result);
+
+    }
 }
